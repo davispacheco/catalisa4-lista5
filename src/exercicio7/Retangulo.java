@@ -23,8 +23,9 @@ public class Retangulo {
         double areaDoRetangulo = base * altura;
         return areaDoRetangulo;
     }
+
     public double calcularPerimetro(double base, double altura) {
-double perimetroDoRetangulo = (base + altura) * 2;
-return perimetroDoRetangulo;
+        double perimetroDoRetangulo = (base + altura) * 2;
+        return perimetroDoRetangulo;
     }
 }
