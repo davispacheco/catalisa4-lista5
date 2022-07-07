@@ -18,4 +18,14 @@ public class Carro {
         this.marca = marca;
         this.potencia = 2.0;
     }
+
+    public boolean ligarCarro(boolean ligado) {
+        if (ligado) {
+            ligado = false;
+        } else {
+            ligado = true;
+        }
+        return ligado;
+
+    }
 }
