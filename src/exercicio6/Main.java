@@ -21,12 +21,30 @@ public class Main {
                     repeticaoMenu = true;
                     break;
                 case "2":
-                    System.out.println("Informe o valor que deseja definir como base do retângulo:");
-                    double baseDoRetangulo = input.nextDouble();
-                    System.out.println("Informe o valor que deseja definir como altura do retângulo:");
-                    double alturaDoRetangulo = input.nextDouble();
-                    retangulo.mudarValorDosLados(baseDoRetangulo, alturaDoRetangulo);
-                    System.out.println("Base e altura do retângulo alteradas com sucesso!");
+                    boolean repeticaoBaseRetangulo = true;
+                    while (repeticaoBaseRetangulo) {
+                        System.out.println("Informe o valor que deseja definir como base do retângulo:");
+                        double baseDoRetangulo = input.nextDouble();
+                        if (baseDoRetangulo <= 0) {
+                            System.out.println("O valor da base do retângulo não pode ser menor ou igual a 0.");
+                            repeticaoBaseRetangulo = true;
+                        } else {
+                            boolean repeticaoAlturaRetangulo = true;
+                            while (repeticaoAlturaRetangulo) {
+                                System.out.println("Informe o valor que deseja definir como altura do retângulo:");
+                                double alturaDoRetangulo = input.nextDouble();
+                                if (alturaDoRetangulo <= 0) {
+                                    System.out.println("O valor da altura do retângulo não pode ser menor ou igual a 0.");
+                                    repeticaoAlturaRetangulo = true;
+                                } else {
+                                    retangulo.mudarValorDosLados(baseDoRetangulo, alturaDoRetangulo);
+                                    System.out.println("Base e altura do retângulo alteradas com sucesso!");
+                                    repeticaoBaseRetangulo = false;
+                                    repeticaoAlturaRetangulo = false;
+                                }
+                            }
+                        }
+                    }
                     repeticaoMenu = true;
                     break;
                 case "3":
@@ -35,7 +53,7 @@ public class Main {
                     repeticaoMenu = true;
                     break;
                 case "4":
-                double perimetroDoRetangulo = retangulo.calcularPerimetro(retangulo.base, retangulo.altura);
+                    double perimetroDoRetangulo = retangulo.calcularPerimetro(retangulo.base, retangulo.altura);
                     System.out.println("O perímetro do retângulo, cuja base é " + retangulo.base + " e a altura, " + retangulo.altura + " é: " + perimetroDoRetangulo);
                     repeticaoMenu = true;
                     break;
