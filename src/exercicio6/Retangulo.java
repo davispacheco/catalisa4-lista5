@@ -1,4 +1,4 @@
-package src.exercicio7;
+package src.exercicio6;
 
 public class Retangulo {
     Double base;

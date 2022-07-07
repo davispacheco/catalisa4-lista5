@@ -1,4 +1,4 @@
-package src.exercicio6;
+package src.exercicio5;
 
 public class Quadrado {
     double tamanhoDoLado;
