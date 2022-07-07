@@ -20,10 +20,19 @@ public class Main {
                     repeticaoMenu = true;
                     break;
                 case "2":
-                    System.out.println("Informe o valor que deseja definir como lado do quadrado:");
-                    double ladoDoQuadrado = input.nextDouble();
-                    quadrado.mudarValorDoLado(ladoDoQuadrado);
-                    System.out.println("Lado do quadrado alterado com sucesso!");
+                    boolean repeticaoLadoDoQuadrado = true;
+                    while (repeticaoLadoDoQuadrado) {
+                        System.out.println("Informe o valor que deseja definir como lado do quadrado:");
+                        double ladoDoQuadrado = input.nextDouble();
+                        if (ladoDoQuadrado <= 0) {
+                            System.out.println("O lado do quadrado não pode ser menor ou igual a 0.");
+                            repeticaoLadoDoQuadrado = true;
+                        } else {
+                            quadrado.mudarValorDoLado(ladoDoQuadrado);
+                            System.out.println("Lado do quadrado alterado com sucesso!");
+                            repeticaoLadoDoQuadrado = false;
+                        }
+                    }
                     repeticaoMenu = true;
                     break;
                 case "3":
