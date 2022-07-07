@@ -38,7 +38,7 @@ public class Main {
                                 break;
                             case "3":
                                 bola1.trocaCor("3");
-                                System.out.println("Cor da bola alterada de " + corAtual + " para " + bola.mostraCor());
+                                System.out.println("Cor da bola alterada de " + corAtual + " para " + bola1.mostraCor());
                                 repeticaoCorDaBola = false;
                                 break;
                             case "4":

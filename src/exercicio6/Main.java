@@ -1,7 +1,5 @@
 package src.exercicio6;
 
-import src.exercicio6.Quadrado;
-
 import java.util.Scanner;
 
 public class Main {

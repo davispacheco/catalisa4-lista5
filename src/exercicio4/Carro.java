@@ -5,6 +5,7 @@ public class Carro {
     String modelo;
     String marca;
     double potencia;
+    boolean ligado = false;
 
     public Carro(int quantidadeDePortas, String modelo, String marca) {
         this.quantidadeDePortas = quantidadeDePortas;
@@ -19,7 +20,7 @@ public class Carro {
         this.potencia = 2.0;
     }
 
-    public boolean ligarCarro(boolean ligado) {
+    public boolean ligarCarro() {
         if (ligado) {
             ligado = false;
         } else {
