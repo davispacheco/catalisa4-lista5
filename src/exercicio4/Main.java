@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         boolean repeticaoMenu = true;
-        Carro carro = new Carro(4, "Bola", "Gol");
+        Carro carro = new Carro(4, "Bola", "Gol", false);
         Scanner input = new Scanner(System.in);
         while (repeticaoMenu) {
             System.out.println("Escolha sua opção.");

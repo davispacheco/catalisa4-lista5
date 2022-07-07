@@ -5,19 +5,21 @@ public class Carro {
     String modelo;
     String marca;
     double potencia;
-    boolean ligado = false;
+    boolean ligado;
 
-    public Carro(int quantidadeDePortas, String modelo, String marca) {
+    public Carro(int quantidadeDePortas, String modelo, String marca, boolean ligado) {
         this.quantidadeDePortas = quantidadeDePortas;
         this.modelo = modelo;
         this.marca = marca;
+        this.ligado = false;
     }
 
-    public Carro(int quantidadeDePortas, String modelo, String marca, double potencia) {
+    public Carro(int quantidadeDePortas, String modelo, String marca, double potencia, boolean ligado) {
         this.quantidadeDePortas = quantidadeDePortas;
         this.modelo = modelo;
         this.marca = marca;
         this.potencia = 2.0;
+        this.ligado = false;
     }
 
     public boolean ligarCarro() {
