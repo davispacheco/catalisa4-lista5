@@ -18,4 +18,21 @@ public class Pessoa {
         this.peso = 0;
         this.altura = altura;
     }
+
+    public void envelhecer() {
+        idade++;
+        altura += 0.5;
+    }
+
+    public void engordar(double quantidadeDePeso) {
+        peso += quantidadeDePeso;
+    }
+
+    public void emagrecer(double quantidadeDePeso) {
+        peso -= quantidadeDePeso;
+    }
+
+    public void crescer(double quantidadeDeCentimetros) {
+        altura += quantidadeDeCentimetros;
+    }
 }
