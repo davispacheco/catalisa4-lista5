@@ -15,17 +15,6 @@ public class Bola {
         this.velocidade = velocidade;
     }
 
-    @Override
-    public String toString() {
-        return "Bola{" +
-                "circunferencia=" + circunferencia +
-                ", cor='" + cor + '\'' +
-                ", marca='" + marca + '\'' +
-                ", material='" + material + '\'' +
-                ", velocidade=" + velocidade +
-                '}';
-    }
-
     public String trocaCor(String numeroDaCor) {
         switch (numeroDaCor) {
             case "1":
@@ -43,7 +32,19 @@ public class Bola {
         return cor;
     }
 
+    @Override
+    public String toString() {
+        return "Bola{" +
+                "circunferencia=" + circunferencia +
+                ", cor='" + cor + '\'' +
+                ", marca='" + marca + '\'' +
+                ", material='" + material + '\'' +
+                ", velocidade=" + velocidade +
+                '}';
+    }
+
     public String mostraCor() {
         return cor;
     }
 }
+
